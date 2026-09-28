@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/courses", "destination": "https://studyapkmod-targetboard.vercel.app/api/courses" },
+    { "source": "/api/course-content", "destination": "https://studyapkmod-targetboard.vercel.app/api/course-content" }
+  ]
+}
