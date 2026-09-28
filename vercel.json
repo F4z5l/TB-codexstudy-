@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/api/courses", "destination": "https://studyapkmod-targetboard.vercel.app/api/courses" },
+    { "source": "/api/course-content", "destination": "https://studyapkmod-targetboard.vercel.app/api/course-content" }
+  ],
+  "headers": [
+    { "source": "/service-worker.js", "headers": [{ "key": "Cache-Control", "value": "no-cache, max-age=0" }] },
+    { "source": "/(app|profile|edustream).js", "headers": [{ "key": "Cache-Control", "value": "no-cache, max-age=0, must-revalidate" }] }
+  ]
+}
